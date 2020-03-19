@@ -10,17 +10,17 @@ class ProfileSerializers(serializers.ModelSerializer):
 class GeneroSerializers(serializers.ModelSerializer):
     class Meta:
         model = Genero
-        fields = ['genero']
+        fields = ('__all__')
 
 class OcupacionSerializers(serializers.ModelSerializer):
     class Meta:
         model = Ocupacion
-        fields = ['ocupacion']
+        fields = ('__all__')
 
 class EstadoSerializers(serializers.ModelSerializer):
     class Meta:
         model = Estado
-        fields = ['estado']
+        fields = ('__all__')
 
 class CiudadSerializers(serializers.ModelSerializer):
     class Meta:
@@ -30,5 +30,5 @@ class CiudadSerializers(serializers.ModelSerializer):
 class EstadoCivilSerializers(serializers.ModelSerializer):
     class Meta:
         model = EstadoCivil
-        fields = ['estado_civil']
+        fields = ('__all__')
 
